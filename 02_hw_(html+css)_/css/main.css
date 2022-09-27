@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+/* Bazı değişkenleri oluşturmak için */
+:root {
+  --main-color: #788894;
+  --dark-color: rgba(24, 23, 23, 0.911);
+  --border: 0.1rem;
+}
+/* Tüm sayfalara etki edecek */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+/*! Temel html kodları */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--main-color);
+  height: 100vh;
+}
+section {
+  padding: 3.5rem 8%;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 75rem;
+  font-size: 1.7rem;
+  color: rgb(218, 218, 218);
+  background-color: var(--dark-color);
+}
+/*************************** content.html ************************/
+/* header start */
+.logo1 img {
+  height: 10rem;
+}
+.header-main {
+  background-color: #a3b1b894;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  margin: 2rem 8%;
+  border-radius: 50rem;
+  box-shadow: 0px 0px 20px -2px #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-main .navbar a {
+  margin: 0.8rem;
+  font-size: 1.5rem;
+  padding: 0rem 1.2rem;
+  color: var(--dark-color);
+  border-bottom: 0.2rem solid transparent;
+}
+.header-main .navbar .active,
+.header-main .navbar a:hover {
+  border-color: var(--main-color);
+  padding-bottom: 0.3rem;
+  font-size: 1.75rem;
+}
+.header-main .buttons button {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header-main .buttons button:hover {
+  font-size: 3.5rem;
+}
+/* header finish */
+
+/* hook start */
+.hook {
+  min-height: 100vh;
+  background: url(../images/bg\ content.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-top: -14.5rem;
+  display: flex;
+  align-items: center;
+}
+.hook .content1 {
+  max-width: 60rem;
+}
+.hook .content1 h3 {
+  font-size: 6rem;
+  color: #fff;
+  /* padding: 0rem 1.5rem; */
+}
+.hook .content1 p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgb(218, 218, 218);
+  /* padding: 3rem 1.5rem; */
+}
+/* hook finish */
+/*info section start */
+.info .box-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+.info .box-container .box img {
+  width: 260px;
+}
+.info .box-container .box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 3rem;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.info .box-container .box h2 {
+  padding-bottom: 3rem;
+}
+.info h1 {
+  font-size: 6rem;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+/* info section finish */
+/* article section start */
+.article h1 {
+  font-size: 6rem;
+  color: #fff;
+}
+.article h2 {
+  font-size: 4rem;
+  color: rgb(218, 218, 218);
+}
+.article p {
+  font-size: 2rem;
+  color: rgb(218, 218, 218);
+  opacity: 50;
+}
+/* article section finish */
+/*************************** content.html ************************/
+/*************************** portfolyo.html ************************/
+.hook2 {
+  background-image: url(../images/portfoliop.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-top: -14.5rem;
+  display: flex;
+  align-items: center;
+  opacity: 60%;
+}
+#portfolyo .box-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.hook2 .yazi {
+  color: var(--dark-color);
+  font-weight: 200px;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 60rem;
+}
+.hook2 .yazi a {
+  color: #fff;
+}
+#portfolyo img {
+  margin-bottom: 3rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 13%;
+  width: 520px;
+}
+footer {
+  padding: 0 9%;
+  font-size: 1rem;
+}
+
+/*************************** portfolyo.html ************************/
+/*************************** index.html*****************************/
+.indexbody {
+  overflow-y: hidden;
+  background-image: url(../images/indexjpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+}
+.containers {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  /* background-color: var(--main-color); */
+  padding: 20% 0;
+}
+.containers div {
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 5rem;
+  background-color: var(--dark-color);
+  border-radius: 20rem;
+}
+.boxi0 {
+  grid-column: 1 / 5;
+}
+.btn2 {
+  color: white;
+  padding: 30px 32px;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+.containers > div:hover {
+  background-color: gray;
+}
+.containers > div:active {
+  background-color: white;
+  border: var(--dark-color);
+  text-align: center;
+}
+
+/*************************** index.html*****************************/
+
+/*************************** cv.
+html*****************************/
+.cvbar {
+  padding: 0;
+  display: flex;
+}
+.leftbar {
+  background-color: var(--dark-color);
+  display: inline-block;
+  height: 100vh;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4rem;
+  padding-top: 12rem;
+  color: rgb(218, 218, 218);
+}
+
+.leftbar img {
+  height: 20rem;
+  border-radius: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff;
+}
+.leftbar h2,
+h1 {
+  text-align: center;
+}
+.leftbar li {
+  padding-left: 2rem;
+}
+.rightbar {
+  text-align: center;
+  background-color: rgb(214, 212, 212);
+  color: var(--dark-color);
+  height: 100vh;
+  width: 80vw;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4rem;
+  padding-top: 12rem;
+}
+
+/*************************** cv.html*****************************/
